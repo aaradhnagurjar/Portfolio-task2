@@ -1,3 +1,3 @@
-# Portfoliyo-task2
+# Portfolio-task2
 #OASIS  INFOBYTE
  https://aaradhnagurjar.github.io/Portfoliyo-task2/
