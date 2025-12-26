@@ -58,7 +58,7 @@ body {
 }
 
 .home__img img {
-  width: 300px;
+  width: 280px;
 }
 
 .section {
@@ -71,8 +71,18 @@ body {
   margin-bottom: 2rem;
 }
 
-.work__container img {
-  width: 100%;
+.work__container {
+  display: grid;
+  gap: 2rem;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: #0a192f;
+  color: #fff;
+  text-decoration: none;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -104,4 +114,3 @@ body {
     display: block;
   }
 }
-
