@@ -1,209 +1,96 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="styles.css">
+  <title>Aaradhna Gurjar | Portfolio</title>
 
-        <!-- ===== BOX ICONS ===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
 
-        <title>Aaradhna Gurjar's Portfolio</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Aaradhna Gurjar</a>
-                </div>
+  <!-- Boxicons -->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
+<body>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+<!-- ===== HEADER ===== -->
+<header class="l-header">
+  <nav class="nav bd-grid">
+    <a href="#home" class="nav__logo">Aaradhna Gurjar</a>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home" id="home">
-                <div class="home__container bd-grid">
-                    <h1>Hi, I'm Aaradhna Gurjar 👋</h1>
-                    <h3>Java Developer | Spring Boot | MySQL</h3>
-                    <p>Computer Science graduate with hands-on experience in Java-based backend development, REST APIs, and database-driven applications. Completed a 3-month Software Developer Internship and actively seeking entry-level opportunities.</p>
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
-                    </div>
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list">
+        <li><a href="#home" class="nav__link active">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#work" class="nav__link">Work</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </div>
 
-                    <img src="full_Picture2.png" alt="" class="home__img">
-                </div>
-            </section>
-            
-            <!--===== ABOUT =====-->
-            <section class="about section" id="about">
-                <h2 class="section-title">About</h2>
+    <div class="nav__toggle" id="nav-toggle">
+      <i class='bx bx-menu'></i>
+    </div>
+  </nav>
+</header>
 
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="full_Picture1.png" alt="">
-                    </div>
+<!-- ===== HOME ===== -->
+<section class="home bd-grid" id="home">
+  <div class="home__data">
+    <h1 class="home__title">
+      Hi,<br>I'm <span class="home__title-color">Aaradhna</span><br>
+      Web Developer
+    </h1>
+    <a href="#contact" class="button">Contact</a>
+  </div>
 
-                    <div>
-                      <p>I am a B.Tech Computer Science graduate with strong fundamentals in Core Java, Object-Oriented Programming, and SQL.<br><br>
-                          During my 3-month Software Developer Internship, I worked on Java and Spring Boot applications, built REST APIs, and integrated MySQL databases. I also collaborated in an Agile environment using GitHub.
-                          <br><br>
-                         I enjoy learning new technologies, solving problems, and building scalable applications. Currently looking for an entry-level Java / Software Developer role.
-                     </p>
+  <div class="home__img">
+    <img src="perfil.png" alt="profile">
+  </div>
+</section>
 
-                        <div class="about__social">
-                           <a href="RESUME_LINK" target="_blank">Download Resume</a>
-                           <a href="https://www.linkedin.com/in/aaradhna-gurjar-4a78582a6/" target="_blank">LinkedIn</a>
-                           <a href="https://github.com/aaradhnagurjar" target="_blank">GitHub</a>
+<!-- ===== ABOUT ===== -->
+<section class="about section" id="about">
+  <h2 class="section-title">About</h2>
+  <div class="about__container bd-grid">
+    <div>
+      <p class="about__text">
+        I am a passionate web developer with experience in building responsive and user-friendly websites.
+      </p>
+    </div>
+  </div>
+</section>
 
-                        </div>
-                    </div>
-                </div>
-            </section>
+<!-- ===== SKILLS ===== -->
+<section class="skills section" id="skills">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills__container bd-grid">
+    <p>HTML, CSS, JavaScript, Bootstrap, React</p>
+  </div>
+</section>
 
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
+<!-- ===== WORK ===== -->
+<section class="work section" id="work">
+  <h2 class="section-title">Work</h2>
+  <div class="work__container bd-grid">
+    <img src="work1.jpg">
+    <img src="work2.jpg">
+    <img src="work3.jpg">
+    <img src="work4.jpg">
+  </div>
+</section>
 
-                <div class="skills__container bd-grid">
-                    <div class="skills__box">
-                        <h3 class="skills__subtitle">Development</h3>
-                        <ul><li>Java</li>
-                            <li>Spring Boot</li>
-                            <li>REST APIs</li> 
-                            <li>JPA / Hibernate</li>
-                            <li>MySQL</li>
-                            <li>HTML, CSS, JavaScript</li>
-                            <li>React</li>
-                            <li>Git & GitHub</li>
-                        </ul>                             
-                                          
-                        <h3 class="skills__subtitle"></h3>
-                        <span class="skills__name">Data Structure</span>
-                        <span class="skills__name">Oops</span>
-                        <span class="skills__name">DBMS</span>
-                        <span class="skills__name">Computer Network</span>
-                    </div>
-                        <section id="experience">
-                            <h2 class="section-title">Experience</h2>
-                            <h3>Software Developer Intern – Infosys Springboard</h3>
-                            <p><i>Sep 2025 – Dec 2025 | Remote</i></p>
-                            <ul>
-                                <li>Worked on Java & Spring Boot backend development</li>
-                                <li>Developed RESTful APIs and integrated MySQL database</li>
-                                <li>Collaborated with team using GitHub</li>
-                                <li>Followed Agile development practices</li>
-                            </ul>
-                        </section>
+<!-- ===== CONTACT ===== -->
+<section class="contact section" id="contact">
+  <h2 class="section-title">Contact</h2>
+  <div class="contact__container bd-grid">
+    <p>Email: example@gmail.com</p>
+  </div>
+</section>
 
-                    <div class="skills__img">
-                        <img src="skill.jpg" alt="">
-                    </div>
-                </div>
-            </section>
-
-            <!--===== PROJECTS SECTION =====-->
-            <section id="projects">
-                <h2>Projects</h2>
-                <div class="project">
-                    <h3>Coding Quiz</h3>
-                    <p><strong>Tech Stack:</strong> Java, Spring Boot, MySQL, HTML, CSS, JavaScript  </p>
-                    <ul><li>Developed an MCQ-based coding quiz platform with dynamic question management and real-time score calculation.</li>
-                        <li>Implemented RESTful APIs using Spring Boot to handle quiz operations, user responses, and result evaluation.</li>
-                        <li>Integrated MySQL database for storing questions, user attempts, and scores.</li>
-                        <li>Optimized scoring logic and database queries to improve accuracy and application performance.</li>
-                    </ul>
-                    <a href="CODING_QUIZ_GITHUB_LINK" target="_blank">GitHub</a>
-                </div>
-                <div class="project">
-                    <h3>We Style You</h3>
-                   <p><strong>Tech Stack:</strong> ReactJS, Spring Boot, MySQL  </p>
-                    <ul><li>Built a dress and accessories e-commerce platform with product listing, shopping cart, and user authentication features.</li>
-                        <li>Developed REST APIs in Spring Boot and integrated them with a ReactJS frontend for seamless data flow.</li>
-                        <li>Implemented backend logic for product management, cart operations, and order handling.</li>
-                        <li>Improved API performance and reduced page load time by optimizing React components and backend database queries.</li>
-                    </ul>
-                    <a href="WE_STYLE_YOU_GITHUB_LINK" target="_blank">GitHub</a>
-                </div>
-            </section>
-
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-               <p>Email: <a href="mailto:aaradhnag07@gmail.com">aaradhnag07@gmail.com</a></p>
-                <p>Phone: +91 0000000090</p>
-                <p>Location: Indore, India</p>
-                <p><a href="https://www.linkedin.com/in/aaradhna-gurjar-4a78582a6/" target="_blank">LinkedIn</a> |  <a href="https://github.com/aaradhnagurjar" target="_blank">GitHub</a></p>
-
-                    <form action="" class="contact__form">
-                        <div class="contact__inputs">
-                            <input type="text" placeholder="Name" class="contact__input">
-                            <input type="mail" placeholder="Email" class="contact__input">
-                        </div>
-
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-
-                        <input type="submit" value="Enviar" class="contact__button">
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer section">
-            <div class="footer__container bd-grid">
-                <div class="footer__data">
-                  <h1>Hi, I'm Aaradhna Gurjar 👋</h1>
-                    <h3>Java Developer | Spring Boot | MySQL</h3>
-                    <p>Computer Science graduate with hands-on experience in Java-based backend development, REST APIs, and database-driven applications. Completed a 3-month Software Developer Internship and actively seeking entry-level opportunities.</p>
-                </div>
-
-                <div class="footer__data">
-                    <h2 class="footer__title">EXPLORE</h2>
-                    <ul>
-                        <li><a href="#home" class="footer__link">Home</a></li>
-                        <li><a href="#about" class="footer__link">About</a></li>
-                        <li><a href="#skills" class="footer__link">Skills</a></li>
-                        <li><a href="https://aaradhnagurjar.github.io/Portfolio-task2/#home" class="footer__link">Projects</a></li>
-                        <li><a href="#Contact" class="footer__link">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer__data">
-                    <h2 class="footer__title">FOLLOW</h2>
-                    <a href="#" class="footer__social"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="#" class="footer__social"><i class='bx bxl-github' ></i></a>
-                    <a href="#" class="footer__social"><i class='bx bxl-twitter' ></i></a>
-                </div>
-            </div>
-        </footer>
-
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--===== MAIN JS =====-->
-        <script src="main.js"></script>
-    </body>
+<!-- JS -->
+<script src="main.js"></script>
+</body>
 </html>
-
-
-
-
