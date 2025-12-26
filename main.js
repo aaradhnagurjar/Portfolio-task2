@@ -5,7 +5,7 @@ const showMenu = (toggleId, navId) => {
 
   if (toggle && nav) {
     toggle.addEventListener("click", () => {
-      nav.classList.toggle("active"); // FIXED
+      nav.classList.toggle("active");
     });
   }
 };
@@ -16,7 +16,7 @@ const navLink = document.querySelectorAll(".nav__link");
 
 function linkAction() {
   const navMenu = document.getElementById("nav-menu");
-  navMenu.classList.remove("active"); // FIXED
+  navMenu.classList.remove("active");
 }
 navLink.forEach(n => n.addEventListener("click", linkAction));
 
@@ -46,28 +46,17 @@ function scrollActive() {
 }
 window.addEventListener("scroll", scrollActive);
 
-/*===== SCROLL REVEAL ANIMATION =====*/
+/*===== SCROLL REVEAL =====*/
 const sr = ScrollReveal({
   origin: "top",
-  distance: "80px",
+  distance: "60px",
   duration: 2000,
   reset: true,
 });
 
-/*SCROLL HOME*/
-sr.reveal(".home__title", {});
-sr.reveal(".home__img", { origin: "right", delay: 400 });
-
-/*SCROLL ABOUT*/
+sr.reveal(".home__data", {});
+sr.reveal(".home__img", { delay: 400 });
 sr.reveal(".about__text", { delay: 300 });
-
-/*SCROLL SKILLS*/
 sr.reveal(".skills__container", { delay: 300 });
-
-/*SCROLL WORK*/
-sr.reveal(".work__container img", { interval: 200 });
-
-/*SCROLL CONTACT*/
+sr.reveal(".work__container", { delay: 300 });
 sr.reveal(".contact__container", { delay: 300 });
-
-
